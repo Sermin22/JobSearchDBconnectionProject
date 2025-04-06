@@ -1,0 +1,694 @@
+# Получил список вакансий по 14-ти ID выбранных компаний из поиска по ("Python")
+
+[
+  {
+    'id_vacancy': '118983443',
+    'name_vacancy': 'Project manager IT',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Опыт управления IT-проектами в сфере платежей/финтеха от 3 лет. — Опыт интеграции платежных провайдеров и криптовалютных решений обязателен. — ',
+    'salary_from': None,
+    'salary_to': 450000,
+    'url': 'https://api.hh.ru/vacancies/118983443?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118228515',
+    'name_vacancy': 'Frontend-разработчик',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Коммерческий опыт не менее 1 года. Глубокие знания в native JavaScript, HTML5, CSS3, LESS, TypeScript. Хорошее понимание концепций...',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118228515?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118993004',
+    'name_vacancy': 'Финансовый директор (CFO)',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Высшее образование. Дополнительное образование или сертификации (ACCA, CFA) будут преимуществом. Опыт работы финансовым директором с функциями внутреннего контроля. ',
+    'salary_from': 300000,
+    'salary_to': 500000,
+    'url': 'https://api.hh.ru/vacancies/118993004?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119126523',
+    'name_vacancy': 'Java-разработчик',
+    'area': 'Москва',
+    'employer': 'Кадровое агентство HireWay',
+    'requirement': 'Базовое понимание архитектуры клиент-серверных приложений. - Знание основных принципов ООП и паттернов проектирования. - Опыт работы с REST API. - ',
+    'salary_from': 90000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/119126523?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118941971',
+    'name_vacancy': 'JavaScript-разработчик (Junior+)',
+    'area': 'Москва',
+    'employer': 'Tech Horizon',
+    'requirement': 'Опыт работы: 1–3 года. Опыт работы с JavaScript (1–3 года). Знание Vue.js / React и опыт работы с Vite...',
+    'salary_from': 120000,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118941971?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118668100',
+    'name_vacancy': 'Frontend developer',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Базовые знания HTML, CSS и JavaScript. Понимание принципов адаптивной и кроссбраузерной верстки. Желание учиться и развиваться в области frontend-разработки. ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118668100?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118975842',
+    'name_vacancy': 'Главный бухгалтер (офис)',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Высшее профильное образование. Опыт работы главным бухгалтером/ведущим бухгалтером не менее 5 лет. Знание 1С:Бухгалтерия 8.3, ЗУП...',
+    'salary_from': 200000,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118975842?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118941947',
+    'name_vacancy': 'Junior Python Developer',
+    'area': 'Москва',
+    'employer': 'Tech Horizon',
+    'requirement': 'Знания Python на базовом уровне. Опыт работы с фреймворками Flask или Django (будет плюсом). Опыт работы с реляционными базами данных...',
+    'salary_from': 130000,
+    'salary_to': 300000,
+    'url': 'https://api.hh.ru/vacancies/118941947?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118987366',
+    'name_vacancy': 'Middle Python (Django) developer',
+    'area': 'Москва',
+    'employer': 'kt.team',
+    'requirement': 'Самостоятельные и проактивные (думают наперед). Клиентоцентричные (стремление доставить ценность, а не задачу на бизнес-языке). Ты нам подходишь если у...',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118987366?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118941869',
+    'name_vacancy': 'Junior Java Developer',
+    'area': 'Санкт-Петербург',
+    'employer': 'Tech Horizon',
+    'requirement': 'Базовые знания Java, ООП и основных принципов разработки. Опыт работы с фреймворками Java (например, Spring, Hibernate). Знания в области работы...',
+    'salary_from': 170000,
+    'salary_to': 450000,
+    'url': 'https://api.hh.ru/vacancies/118941869?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585675',
+    'name_vacancy': 'Тестировщик',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Желание развиваться в области тестирования программного обеспечения. Базовые знания в области IT и программирования. Умение работать в команде и эффективно...',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585675?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118668088',
+    'name_vacancy': 'Разработчик (Python)',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Знание Python и основных библиотек (Django, Flask и др.). Понимание принципов ООП и опыт работы с базами данных (SQL, NoSQL). ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118668088?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118941891',
+    'name_vacancy': 'Junior+ Java-разработчик',
+    'area': 'Москва',
+    'employer': 'Tech Horizon',
+    'requirement': 'Опыт работы с Java от 1 года. Знание Spring Boot, Hibernate. Опыт работы с реляционными базами данных (SQL). ',
+    'salary_from': 150000,
+    'salary_to': 450000,
+    'url': 'https://api.hh.ru/vacancies/118941891?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118941847',
+    'name_vacancy': 'Java Junior developer',
+    'area': 'Москва',
+    'employer': 'Tech Horizon',
+    'requirement': 'Базовые знания языка программирования Java (опыт работы от 0,5 года будет преимуществом). Знание основ ООП и принципов разработки на...',
+    'salary_from': 120000,
+    'salary_to': 400000,
+    'url': 'https://api.hh.ru/vacancies/118941847?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118737542',
+    'name_vacancy': 'Python разработчик',
+    'area': 'Москва',
+    'employer': 'ВижнЛабс (VisionLabs)',
+    'requirement': 'Практический опыт разработки на Python (3.x) от двух лет, знание стандартной библиотеки. Опыт в реализации проектов, желательно с интеграционными...',
+    'salary_from': 160000,
+    'salary_to': 210000,
+    'url': 'https://api.hh.ru/vacancies/118737542?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119126524',
+    'name_vacancy': 'Java-разработчик',
+    'area': 'Санкт-Петербург',
+    'employer': 'Кадровое агентство HireWay',
+    'requirement': 'Базовое понимание архитектуры клиент-серверных приложений. - Знание основных принципов ООП и паттернов проектирования. - Опыт работы с REST API. - ',
+    'salary_from': 90000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/119126524?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117915633',
+    'name_vacancy': 'Бизнес ассистент, Дубай',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Опыт ассистента от 6 месяцев. Умеешь работать в команде и самостоятельно решать задачи. Приветствуется опыт работы с Trello или аналогичными...',
+    'salary_from': 170000,
+    'salary_to': 260000,
+    'url': 'https://api.hh.ru/vacancies/117915633?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585671',
+    'name_vacancy': 'Аккаунт менеджер',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Желание развиваться в сфере продаж и работы с клиентами. Отличные коммуникативные навыки и умение находить общий язык с разными людьми. ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585671?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118941903',
+    'name_vacancy': 'Junior+ Java-разработчик',
+    'area': 'Санкт-Петербург',
+    'employer': 'Tech Horizon',
+    'requirement': 'Опыт работы с Java от 1 года. Знание Spring Boot, Hibernate. Опыт работы с реляционными базами данных (SQL). ',
+    'salary_from': 150000,
+    'salary_to': 450000,
+    'url': 'https://api.hh.ru/vacancies/118941903?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118971300',
+    'name_vacancy': 'Начинающий продакт-менеджер',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Понимание таблиц Excel. Будет огромным преимуществом умение или желание развиваться в сфере продакт менеджера финансовых компаниях.',
+    'salary_from': 60000,
+    'salary_to': 80000,
+    'url': 'https://api.hh.ru/vacancies/118971300?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119022726',
+    'name_vacancy': 'Начинающий специалист в финансовый отдел',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Ты идеально подходишь, если: У тебя есть опыт работы с клиентами и процессами, связанными с расчетами. Ты умеешь работать с...',
+    'salary_from': 75000,
+    'salary_to': 110000,
+    'url': 'https://api.hh.ru/vacancies/119022726?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118668114',
+    'name_vacancy': 'Координатор проектов',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Желание развиваться в сфере управления проектами. Отличные коммуникативные навыки и умение работать в команде. Способность быстро обучаться и адаптироваться к...',
+    'salary_from': None,
+    'salary_to': 150000,
+    'url': 'https://api.hh.ru/vacancies/118668114?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117973537',
+    'name_vacancy': 'Python-разработчик(FastApi)',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Опыт коммерческой разработки на Python (3.9 и выше) или готовность перехода с другого стека - от 2 лет. ',
+    'salary_from': 110000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/117973537?host=hh.ru'
+  },
+  {
+    'id_vacancy': '115638893',
+    'name_vacancy': 'Оператор поддержки клиентов удаленно (ночные смены)',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Отличный письменный русский язык. Наличие компьютера/ноутбука для работы, а также смартфона. Уметь работать автономно и самостоятельно находить информацию. ',
+    'salary_from': 65000,
+    'salary_to': 65000,
+    'url': 'https://api.hh.ru/vacancies/115638893?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118547038',
+    'name_vacancy': 'Frontend developer (React)',
+    'area': 'Москва',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт работы в области Frontend developer (React) от 5 лет. Отличное знание языков JavaScript,Typescript. Практический опыт использования react, React...',
+    'salary_from': 180000,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118547038?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118817649',
+    'name_vacancy': 'Оператор поддержки клиентов Дальнего Востока',
+    'area': 'Владивосток',
+    'employer': 'Джем-Софт',
+    'requirement': 'Грамотный письменный русский язык. Наличие компьютера для работы. Уметь работать автономно и самостоятельно находить информацию. Позитивное мышление и уважение к...',
+    'salary_from': 65000,
+    'salary_to': 65000,
+    'url': 'https://api.hh.ru/vacancies/118817649?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118975880',
+    'name_vacancy': 'Системный аналитик',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Обязателен опыт в IT. Грейд не ниже Middle+| Senior. Глубокое понимание процессов разработки ПО и CI/CD. Опыт работы с...',
+    'salary_from': None,
+    'salary_to': 350000,
+    'url': 'https://api.hh.ru/vacancies/118975880?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117386116',
+    'name_vacancy': 'QA-инженер',
+    'area': 'Санкт-Петербург',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт работы от 4 лет. Знание теории и методологии тестирования ПО. Знание артефактов тестирования (тест план, тестовый набор, тест кейс...',
+    'salary_from': 160000,
+    'salary_to': 200000,
+    'url': 'https://api.hh.ru/vacancies/117386116?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585677',
+    'name_vacancy': 'Developer',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Базовые знания одного из языков программирования. Понимание принципов ООП и баз данных. Желание учиться и развиваться в области программирования. ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585677?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585672',
+    'name_vacancy': 'Продакт-менеджер',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Стремление к развитию в сфере финансовых технологий. Способность анализировать рынок и выявлять тренды. Навыки управления проектами и координации командной работы. ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585672?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585676',
+    'name_vacancy': 'Aналитик',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Высшее образование в области информационных технологий или смежных дисциплин. Базовые знания в области системного анализа и проектирования. Умение работать с...',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585676?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118971502',
+    'name_vacancy': 'Бизнес-ассистент / помощник маркетолога',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Понимание таблиц Excel. Понимание как работает Яндекс Метрика. Базовое понимание SEO - оптимизации. Работа с гугл-таблицами. Будет огромным преимуществом умение...',
+    'salary_from': 60000,
+    'salary_to': 100000,
+    'url': 'https://api.hh.ru/vacancies/118971502?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585670',
+    'name_vacancy': 'Руководитель проектов',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Высокая организованность и умение работать в условиях многозадачности. Отличные коммуникативные навыки и способность к эффективному взаимодействию с командой. ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585670?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118585674',
+    'name_vacancy': 'Бизнес-аналитик',
+    'area': 'Москва',
+    'employer': 'Project Brain',
+    'requirement': 'Высшее образование в области экономики, финансов или смежных дисциплин. Аналитический склад ума и умение работать с большими объемами данных. ',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/118585674?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118523931',
+    'name_vacancy': 'Python-разработчик (Junior/Middle)',
+    'area': 'Москва',
+    'employer': 'LATOKEN',
+    'requirement': 'Использует LLM и RAG. 1+ год опыта в Python. Увлечение передовыми технологиями, опыт применения GPT для анализа данных с...',
+    'salary_from': 1500,
+    'salary_to': 3100,
+    'url': 'https://api.hh.ru/vacancies/118523931?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118826777',
+    'name_vacancy': 'Ассистент руководителя IT проекта',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Системность и последовательность в работе. - Стрессоустойчивость и способность эффективно справляться с большим объемом задач. - Готовность брать на себя ответственность и...',
+    'salary_from': 90000,
+    'salary_to': 100000,
+    'url': 'https://api.hh.ru/vacancies/118826777?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117565985',
+    'name_vacancy': 'Backend разработчик (PHP)',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Опыт коммерческой разработки на PHP 7+ Yii2/Laravel от 5 лет. Опыт работы с MongoDB, aggregation framework от...',
+    'salary_from': 180000,
+    'salary_to': 240000,
+    'url': 'https://api.hh.ru/vacancies/117565985?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118969131',
+    'name_vacancy': 'Аккаунт-менеджер (сопровождение клиентов)',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Чем больше стаж работы и опыт решения вопросов - тем выше заработная плата. Хотим видеть в кандидате: 1. Умение быстро реагировать...',
+    'salary_from': 90000,
+    'salary_to': 180000,
+    'url': 'https://api.hh.ru/vacancies/118969131?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118762294',
+    'name_vacancy': 'Специалист в отдел кадров',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Опыт работы от 6 месяцев в отделе кадров, делопроизводства или смежных областях. Знания в работе с «1С: Зарплата и...',
+    'salary_from': 60000,
+    'salary_to': 75000,
+    'url': 'https://api.hh.ru/vacancies/118762294?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119039450',
+    'name_vacancy': 'Начинающий специалист в IT/ Контроль бизнесс процессов',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Работа в динамичной IT-команде профессионалов, где ценится креативное мышление и стремление к росту. Опыт работы не обязателен, мы всему...',
+    'salary_from': 60000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/119039450?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117579859',
+    'name_vacancy': 'Python разработчик AI сервисы',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Опыт работы с Python и фреймворками для работы с AI (например, LangChain, FastAPI, Transformers, Pydantic AI и тд). ',
+    'salary_from': 250000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/117579859?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118970909',
+    'name_vacancy': 'Финансовый специалист',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Опыт работы на схожей позиции от 6 месяцев. Высшее образование в области финансов или экономики. Отличное владение MS Excel (сводные...',
+    'salary_from': 120000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/118970909?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118783196',
+    'name_vacancy': 'Старший Python разработчик',
+    'area': 'Москва',
+    'employer': 'Enjoypro',
+    'requirement': 'Уверенное владение Python (версии 3+) от 4 лет опыта. Отличное знание библиотек requsts, scapy. Опыт работы с веб-фреймворками...',
+    'salary_from': 160000,
+    'salary_to': 240000,
+    'url': 'https://api.hh.ru/vacancies/118783196?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118998877',
+    'name_vacancy': 'Международный юрист в сфере FinTech (юрист по договорной работе)',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Высшее юридическое образование. Свободное владение английским языком (уровень C1). Глубокие знания договорного и международного права. Умение доступно и понятно...',
+    'salary_from': 180000,
+    'salary_to': 200000,
+    'url': 'https://api.hh.ru/vacancies/118998877?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118972436',
+    'name_vacancy': 'Финансовый аналитик / Финансовый менеджер',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Опыт работы финансовым аналитиком от 1 года. Умение вести управленческую отчетность. Умение работать с 1С (будет большим плюсом!). ',
+    'salary_from': 100000,
+    'salary_to': 140000,
+    'url': 'https://api.hh.ru/vacancies/118972436?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118572605',
+    'name_vacancy': 'Программист-аналитик',
+    'area': 'Москва',
+    'employer': 'Кадровое агентство Candidate',
+    'requirement': 'Высшее образование в области информационных технологий или смежной области. - Опыт работы программистом-аналитиком или смежной должности от 1 года. - ',
+    'salary_from': 150000,
+    'salary_to': 200000,
+    'url': 'https://api.hh.ru/vacancies/118572605?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118335199',
+    'name_vacancy': 'Менеджер по продажам',
+    'area': 'Москва',
+    'employer': 'Кадровое агентство Candidate',
+    'requirement': 'Опыт работы в металлопрокате, поставке материалов или знание принципов работы с оптовыми B2B/B2G-клиентами будет...',
+    'salary_from': 130000,
+    'salary_to': 210000,
+    'url': 'https://api.hh.ru/vacancies/118335199?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118518334',
+    'name_vacancy': 'Fullstack разработчик PHP+JS',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Опыт c PHP7+ и Yii2. Опыт Vue2/3, Vuex/Pinia. Навыки командной работы и контроля версий...',
+    'salary_from': 270000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/118518334?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119102104',
+    'name_vacancy': 'Администратор баз данных (PostgreSQL)',
+    'area': 'Москва',
+    'employer': 'SberTech',
+    'requirement': 'Опыт работы с ОС Linux в качестве администратора. Опыт администрирования баз данных PostgreSQL. Базовое представление архитектуры PostgreSQL. Желателен опыт работы...',
+    'salary_from': 300000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/119102104?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117569621',
+    'name_vacancy': 'Системный аналитик',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Опыт работы в продуктовых компаниях не менее 5 лет. Навык декомпозиции бизнес-процессов и написания требований (функциональных и нефункциональных). ',
+    'salary_from': 230000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/117569621?host=hh.ru'
+  },
+  {
+    'id_vacancy': '113030239',
+    'name_vacancy': 'Java-разработчик',
+    'area': 'Санкт-Петербург',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт enterprise разработки/разработки высоконагруженных сервисов на Java от 4 лет. Отличные знания Java Core OOP, Concurrency/Multithreading, Stream API...',
+    'salary_from': 180000,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/113030239?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118661207',
+    'name_vacancy': 'Бренд-менеджер мобильного приложения',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Высшее образование в области маркетинга, рекламы, бренд-менеджмента или смежных областях. - Опыт работы в бренд-менеджменте или маркетинге от 3...',
+    'salary_from': 150000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/118661207?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119166629',
+    'name_vacancy': 'С++ разработчик (Platform V Synapse Service Mesh)',
+    'area': 'Санкт-Петербург',
+    'employer': 'SberTech',
+    'requirement': 'Опыт разработки коммерческих проектов на С++ (11, 14, 17) от 2х лет. Опыт работы с многопоточным программированием и понимание...',
+    'salary_from': None,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/119166629?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118694052',
+    'name_vacancy': 'Менеджер бизнес-процессов / Начинающий специалист',
+    'area': 'Москва',
+    'employer': 'RecruitTech',
+    'requirement': 'Ориентированность на результат. Желание карьерного роста и готовность развиваться в нашей компании . Системность и Ответственность. Опыт работы в сфере контроля...',
+    'salary_from': 60000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/118694052?host=hh.ru'
+  },
+  {
+    'id_vacancy': '112181549',
+    'name_vacancy': 'C++ Разработчик',
+    'area': 'Москва',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт работы в командах разработки от 4 лет. C++ 11 и выше. STL, Boost. Опыт написания многопоточных программ. ',
+    'salary_from': 180000,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/112181549?host=hh.ru'
+  },
+  {
+    'id_vacancy': '117049742',
+    'name_vacancy': 'DevOps-инженер',
+    'area': 'Санкт-Петербург',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт работы в качестве DevOps инженера от 3 лет. Экспертиза в Linux и Networks. Знание скриптовых языков bash (python - будет...',
+    'salary_from': 180000,
+    'salary_to': 300000,
+    'url': 'https://api.hh.ru/vacancies/117049742?host=hh.ru'
+  },
+  {
+    'id_vacancy': '112181748',
+    'name_vacancy': 'Системный аналитик',
+    'area': 'Москва',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт работы в качестве системного аналитика не менее 3-х лет . Опыт работы с Postman / Swagger / OpenAPI. Описания API и...',
+    'salary_from': 200000,
+    'salary_to': 250000,
+    'url': 'https://api.hh.ru/vacancies/112181748?host=hh.ru'
+  },
+  {
+    'id_vacancy': '115257938',
+    'name_vacancy': 'Менеджер по международному развитию мобильных приложений (Performance Marketing)',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Что бы мы хотели видеть в подходящих кандидатах: — 3+ года в performance-маркетинге с фокусом на мобильные приложения. — ',
+    'salary_from': 200000,
+    'salary_to': None,
+    'url': 'https://api.hh.ru/vacancies/115257938?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119167071',
+    'name_vacancy': 'Senior/Lead Golang разработчик (Platform V Service Mesh)',
+    'area': 'Москва',
+    'employer': 'SberTech',
+    'requirement': 'Опыт коммерческой разработки на Go 3х лет. Опыт анализа, декомпозиции и постановки задач, проведения code review. Опыт разработки архитектурных...',
+    'salary_from': None,
+    'salary_to': 400000,
+    'url': 'https://api.hh.ru/vacancies/119167071?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118661289',
+    'name_vacancy': 'PR-менеджер мобильного приложения',
+    'area': 'Москва',
+    'employer': 'Джем-Софт',
+    'requirement': 'Высшее образование в области PR, журналистики, маркетинга или коммуникаций. - Опыт работы в PR или смежных областях от 3-5 лет. - ',
+    'salary_from': 130000,
+    'salary_to': 160000,
+    'url': 'https://api.hh.ru/vacancies/118661289?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118523954',
+    'name_vacancy': 'C# Продакт Разработчик Трейдинг',
+    'area': 'Москва',
+    'employer': 'LATOKEN',
+    'requirement': '2+ года разработки на C#. Знания Python/React. Опыт трейдинга (личный или рабочий) и/или высокие результаты в олимпиадном...',
+    'salary_from': 150000,
+    'salary_to': 300000,
+    'url': 'https://api.hh.ru/vacancies/118523954?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118523966',
+    'name_vacancy': 'Продакт Разработчик Growth React/Node.js Full stack (Удаленно)',
+    'area': 'Санкт-Петербург',
+    'employer': 'LATOKEN',
+    'requirement': 'Ответственность за доставку проектов в продакшн и решение кросс-командных проблем. Груминг и планирование беклога. Понимание клиентских метрик и вашего...',
+    'salary_from': 2500,
+    'salary_to': 3200,
+    'url': 'https://api.hh.ru/vacancies/118523966?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119083014',
+    'name_vacancy': 'Site Reliability Engineer (SRE) / Senior DevOps → CRO-Stack Lead',
+    'area': 'Москва',
+    'employer': 'Таубина Софья Антоновна',
+    'requirement': 'Kubernetes (k8s) — в проде, много сервисов. PostgreSQL — активно используется, требуется опыт глубокой настройки и поддержки. Temporal, Golang, Python...',
+    'salary_from': 360000,
+    'salary_to': 360000,
+    'url': 'https://api.hh.ru/vacancies/119083014?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119083015',
+    'name_vacancy': 'Site Reliability Engineer (SRE) / Senior DevOps → CRO-Stack Lead',
+    'area': 'Санкт-Петербург',
+    'employer': 'Таубина Софья Антоновна',
+    'requirement': 'Kubernetes (k8s) — в проде, много сервисов. PostgreSQL — активно используется, требуется опыт глубокой настройки и поддержки. Temporal, Golang, Python...',
+    'salary_from': 360000,
+    'salary_to': 360000,
+    'url': 'https://api.hh.ru/vacancies/119083015?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118959962',
+    'name_vacancy': 'Senior С/С++ developer (Platform V Pangolin DB)',
+    'area': 'Санкт-Петербург',
+    'employer': 'SberTech',
+    'requirement': 'Владение C и С++ от 3 лет (большая часть разработок будет на С). Знание и понимание основ построения СУБД: структур...',
+    'salary_from': None,
+    'salary_to': 300000,
+    'url': 'https://api.hh.ru/vacancies/118959962?host=hh.ru'
+  },
+  {
+    'id_vacancy': '118312935',
+    'name_vacancy': 'Автоматизатор тестирования (AQA Python)',
+    'area': 'Москва',
+    'employer': 'Enjoypro',
+    'requirement': 'Опыт работы от 4 лет. Базовые знания PyTest, Behave, Allure. Опыт работы с инструментом автоматического тестирования (Selenium). Знание синтаксиса SQL...',
+    'salary_from': 180000,
+    'salary_to': 230000,
+    'url': 'https://api.hh.ru/vacancies/118312935?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119083018',
+    'name_vacancy': 'Site Reliability Engineer (SRE) / Senior DevOps → CRO-Stack Lead',
+    'area': 'Томск',
+    'employer': 'Таубина Софья Антоновна',
+    'requirement': 'Kubernetes (k8s) — в проде, много сервисов. PostgreSQL — активно используется, требуется опыт глубокой настройки и поддержки. Temporal, Golang, Python...',
+    'salary_from': 360000,
+    'salary_to': 360000,
+    'url': 'https://api.hh.ru/vacancies/119083018?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119083016',
+    'name_vacancy': 'Site Reliability Engineer (SRE) / Senior DevOps → CRO-Stack Lead',
+    'area': 'Ульяновск',
+    'employer': 'Таубина Софья Антоновна',
+    'requirement': 'Kubernetes (k8s) — в проде, много сервисов. PostgreSQL — активно используется, требуется опыт глубокой настройки и поддержки. Temporal, Golang, Python...',
+    'salary_from': 360000,
+    'salary_to': 360000,
+    'url': 'https://api.hh.ru/vacancies/119083016?host=hh.ru'
+  },
+  {
+    'id_vacancy': '119083017',
+    'name_vacancy': 'Site Reliability Engineer (SRE) / Senior DevOps → CRO-Stack Lead',
+    'area': 'Новосибирск',
+    'employer': 'Таубина Софья Антоновна',
+    'requirement': 'Kubernetes (k8s) — в проде, много сервисов. PostgreSQL — активно используется, требуется опыт глубокой настройки и поддержки. Temporal, Golang, Python...',
+    'salary_from': 360000,
+    'salary_to': 360000,
+    'url': 'https://api.hh.ru/vacancies/119083017?host=hh.ru'
+  }
+]
