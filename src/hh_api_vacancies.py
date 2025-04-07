@@ -63,7 +63,8 @@ class HeadHunterApiVacancies:
                 'id_vacancy': vacancy['id'],
                 'name_vacancy': vacancy['name'],
                 'area': vacancy['area']['name'],
-                'employer': vacancy['employer']['name'],
+                'id_employer':vacancy['employer']['id'],
+                'name_employer': vacancy['employer']['name'],
                 'requirement': vacancy['snippet']['requirement'],
                 'salary_from': vacancy['salary']['from'],  # if vacancy['salary']['from'] is not None else 0,
                 'salary_to': vacancy['salary']['to'],  # if vacancy['salary']['to'] is not None else 0,
@@ -71,17 +72,6 @@ class HeadHunterApiVacancies:
             }
             vacancies_result.append(vacancy_data)
         return vacancies_result
-
-    # @staticmethod
-    # def get_vacancies_selected_companies(vacancies_result, interesting_companies):
-    #     '''Получаем список вакансий от интересующих нас компаний'''
-    #
-    #     vacancies_selected_companies = []
-    #     for key in vacancies_result:
-    #         if key['employer'] in interesting_companies:
-    #             vacancies_selected_companies.append(key)
-    #
-    #     return vacancies_selected_companies
 
 
 if __name__ == "__main__":

@@ -37,10 +37,17 @@ class HeadHunterApiEmployers:
     def send_connect(self):
         return self._connect
 
+    def reset_state(self):
+        """Метод для сброса состояния объекта перед новым запросом."""
+        self.__employers.clear()
+        self.__params['text'] = ''
+        self.__params['page'] = 0
+
     def get_employers(self, keyword=None):
         """Метод получает вакансии с возможностью поиска по ключевому слову и
         преобразует их, отбирая необходимые ключи со значениями"""
 
+        self.reset_state()  # Сбрасываем состояние перед новым запросом
         self.params['text'] = keyword
         if self.send_connect:
             while self.params.get('page') != 50:
@@ -74,14 +81,27 @@ if __name__ == "__main__":
     # Проверяем прошел ли запрос успешно
     hh_connect = hh_api.send_connect()
     print(hh_connect)
-    # Получение вакансий с hh.ru
-    hh_employers = hh_api.get_employers('kt.team') # ("Т-Банк")
-    print(hh_employers)
-    print(type(hh_employers))
-    print(len(hh_employers))
+    # Получение компаний с hh.ru
+    # hh_employers = hh_api.get_employers('kt.team')
+    # print(hh_employers)
+    # print(type(hh_employers))
+    # print(len(hh_employers))
+
+    interesting_companies = ['Tech Horizon', 'Кадровое агентство HireWay', 'Project Brain', 'Аптрейд',
+                             'Кадровое агентство Candidate', 'ВижнЛабс VisionLabs', 'SberTech', 'Wildbox',
+                             'LATOKEN', 'Enjoypro', 'RecruitTech', 'Таубина Софья Антоновна',
+                             'Джем-Софт', 'kt.team']
+
+    list_interesting_companies = []
+    for company in interesting_companies:
+        hh_employers = hh_api.get_employers(company)
+        list_interesting_companies.extend(hh_employers)
+
+    print(list_interesting_companies)
+    print(len(list_interesting_companies))
 
 
-    # interesting_companies = ['Tech Horizon', 'Кадровое агентство HireWay', 'Project Brain', 'Аптрейд',
-    #                          'Кадровое агентство Candidate', 'ВижнЛабс VisionLabs', 'SberTech', 'Wildbox',
-    #                          'LATOKEN', 'Enjoypro', 'RecruitTech', 'Таубина Софья Антоновна',
-    #                          'Джем-Софт', 'kt.team']
+
+
+
+
