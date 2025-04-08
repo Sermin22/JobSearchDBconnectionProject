@@ -18,9 +18,10 @@ def create_database(database_name: str, params: dict) -> None:
 def create_table(database_name: str, params: dict) -> None:
     """Функция обеспечивает подключение к базе данных и создает таблицы"""
 
-    # Создаем таблицу employers
+    # Подключаемся к базе данных с параметрами из файла и именем базы данных
     conn = psycopg2.connect(dbname=database_name, **params)
 
+    # Создаем таблицу employers
     with conn.cursor() as cur:
         cur.execute("DROP TABLE IF EXISTS employers")
         cur.execute("""

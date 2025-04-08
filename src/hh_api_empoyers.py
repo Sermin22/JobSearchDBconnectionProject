@@ -81,20 +81,21 @@ if __name__ == "__main__":
     # Проверяем прошел ли запрос успешно
     hh_connect = hh_api.send_connect()
     print(hh_connect)
-    # Получение компаний с hh.ru
-    # hh_employers = hh_api.get_employers('kt.team')
+    # Получение компании с hh.ru по ее названию
+    # hh_employers = hh_api.get_employers('Tech Horizon')
     # print(hh_employers)
-    # print(type(hh_employers))
-    # print(len(hh_employers))
 
     interesting_companies = ['Tech Horizon', 'Кадровое агентство HireWay', 'Project Brain', 'Аптрейд',
                              'Кадровое агентство Candidate', 'ВижнЛабс VisionLabs', 'SberTech', 'Wildbox',
                              'LATOKEN', 'Enjoypro', 'RecruitTech', 'Таубина Софья Антоновна',
                              'Джем-Софт', 'kt.team']
 
+    # # Получение списка отобранных компаний с hh.ru по списку их названий
     list_interesting_companies = []
     for company in interesting_companies:
+        # В цикле получаем каждое название компании, передаем в метод класса и записываем в переменную
         hh_employers = hh_api.get_employers(company)
+        # Полученный результат в переменной добавляем в список
         list_interesting_companies.extend(hh_employers)
 
     print(list_interesting_companies)
