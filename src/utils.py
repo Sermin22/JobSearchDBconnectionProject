@@ -15,6 +15,7 @@ def create_database(database_name: str, params: dict) -> None:
     cur.close()
     conn.close()
 
+
 def create_table(database_name: str, params: dict) -> None:
     """Функция обеспечивает подключение к базе данных и создает таблицы"""
 
@@ -48,7 +49,7 @@ def create_table(database_name: str, params: dict) -> None:
                     salary_from INT,
                     salary_to INT,
                     url TEXT,
-                    
+
                     CONSTRAINT fk_vacancies_id_employer FOREIGN KEY (id_employer) REFERENCES employers(id_employer)
                 )
             """)

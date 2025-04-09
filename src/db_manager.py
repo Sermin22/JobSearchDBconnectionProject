@@ -3,6 +3,9 @@ from config import config
 
 
 class DBManager:
+    database_name: str
+    params: dict
+
     def __init__(self, database_name, params):
         self.database_name = database_name
         self.conn = None
@@ -30,17 +33,17 @@ class DBManager:
 
         cur = self.conn.cursor()
         query = """
-            SELECT 
-                employers.id_employer, 
-                employers.name_employer, 
+            SELECT
+                employers.id_employer,
+                employers.name_employer,
                 COUNT(vacancies.id_vacancy) AS number_of_vacancies
-            FROM 
-            employers 
-            LEFT JOIN vacancies 
-            ON 
+            FROM
+                employers
+            LEFT JOIN vacancies
+            ON
                 employers.id_employer = vacancies.id_employer
-            GROUP BY 
-                employers.id_employer;
+            GROUP BY
+            employers.id_employer;
                 """
         try:
             cur.execute(query)
@@ -108,12 +111,12 @@ class DBManager:
 
         cur = self.conn.cursor()
         query = """
-            SELECT 
-                name_employer, 
-                AVG(salary_from) AS average_salary_from 
-            FROM 
+            SELECT
+                name_employer,
+                AVG(salary_from) AS average_salary_from
+            FROM
                 vacancies
-            GROUP BY 
+            GROUP BY
                 name_employer;
                 """
         try:
@@ -141,7 +144,7 @@ class DBManager:
 
         cur = self.conn.cursor()
         query = """
-            SELECT * FROM vacancies 
+            SELECT * FROM vacancies
             WHERE salary_from > (SELECT AVG(salary_from) FROM vacancies);
                 """
         try:
@@ -149,10 +152,12 @@ class DBManager:
             result = cur.fetchall()
             # return result
             result_list = []
-            for id_vacancy, name_vacancy, area, id_employer, name_employer, requirement, salary_from, salary_to, url in result:
+            for (id_vacancy, name_vacancy, area, id_employer, name_employer, requirement, salary_from,
+                 salary_to, url) in result:
                 result_list.append(f"id_vacancy: {id_vacancy}, name_vacancy: {name_vacancy}, area: {area},"
-                                   f"id_employer: {id_employer}, name_employer: {name_employer}, requirement: {requirement},"
-                                   f"salary_from: {salary_from}, salary_to: {salary_to}, url: {url}")
+                                   f"id_employer: {id_employer}, name_employer: {name_employer}, "
+                                   f"requirement: {requirement}, salary_from: {salary_from}, "
+                                   f"salary_to: {salary_to}, url: {url}")
             return result_list
 
         except Exception as error:
@@ -179,10 +184,12 @@ class DBManager:
             result = cur.fetchall()
             # return result
             result_list = []
-            for id_vacancy, name_vacancy, area, id_employer, name_employer, requirement, salary_from, salary_to, url in result:
+            for (id_vacancy, name_vacancy, area, id_employer, name_employer, requirement, salary_from,
+                 salary_to, url) in result:
                 result_list.append(f"id_vacancy: {id_vacancy}, name_vacancy: {name_vacancy}, area: {area},"
-                                   f"id_employer: {id_employer}, name_employer: {name_employer}, requirement: {requirement},"
-                                   f"salary_from: {salary_from}, salary_to: {salary_to}, url: {url}")
+                                   f"id_employer: {id_employer}, name_employer: {name_employer}, "
+                                   f"requirement: {requirement}, salary_from: {salary_from}, "
+                                   f"salary_to: {salary_to}, url: {url}")
             return result_list
 
         except Exception as error:
@@ -215,8 +222,6 @@ if __name__ == "__main__":
     # Получаем список всех вакансий, в названии которых содержатся переданные в метод слова
     list_get_vacancies_with_keyword = manager.get_vacancies_with_keyword('разработчик')
     print(list_get_vacancies_with_keyword)
-
-
 
 # Вариант с другим подключением к "base_vacancies" (название по умолчанию)
 # class DBManager:
@@ -269,7 +274,8 @@ if __name__ == "__main__":
 #             # return result
 #             vacancies_list = []
 #             for name_employer, name_vacancy, salary_from, salary_to, vacancies_url in result:
-#                 vacancies_list.append(f"name_employer: {name_employer}, name_vacancy: {name_vacancy}, Salary: от {salary_from} до {salary_to}, vacancies_url: {vacancies_url}")
+#                 vacancies_list.append(f"name_employer: {name_employer}, name_vacancy: {name_vacancy},
+#                 Salary: от {salary_from} до {salary_to}, vacancies_url: {vacancies_url}")
 #             return vacancies_list
 #
 #         except Exception as error:

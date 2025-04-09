@@ -100,9 +100,3 @@ if __name__ == "__main__":
 
     print(list_interesting_companies)
     print(len(list_interesting_companies))
-
-
-
-
-
-

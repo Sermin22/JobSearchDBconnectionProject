@@ -63,7 +63,7 @@ class HeadHunterApiVacancies:
                 'id_vacancy': vacancy['id'],
                 'name_vacancy': vacancy['name'],
                 'area': vacancy['area']['name'],
-                'id_employer':vacancy['employer']['id'],
+                'id_employer': vacancy['employer']['id'],
                 'name_employer': vacancy['employer']['name'],
                 'requirement': vacancy['snippet']['requirement'],
                 'salary_from': vacancy['salary']['from'],  # if vacancy['salary']['from'] is not None else 0,
@@ -81,10 +81,10 @@ if __name__ == "__main__":
     hh_connect = hh_api.send_connect()
     print(hh_connect)
     # Получение вакансий с hh.ru
-    interesting_companies_id = ['11736287', '11774774', '11679140', '119162926', '9472604', '1978012', '906557', '9594816', '2870783', '5179890', '11282140', '6038553', '2265728', '1714677']
+    interesting_companies_id = ['11736287', '11774774', '11679140', '119162926', '9472604',
+                                '1978012', '906557', '9594816', '2870783', '5179890',
+                                '11282140', '6038553', '2265728', '1714677']
     hh_vacancies = hh_api.get_vacancies('', interesting_companies_id)  # ('Python') ['11736287', '6038553']
     print(hh_vacancies)
     print(type(hh_vacancies))
     print(len(hh_vacancies))
-
-
